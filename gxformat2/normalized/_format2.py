@@ -422,7 +422,7 @@ def _normalize_inputs(
 
 
 def _normalize_outputs(
-    outputs: list[WorkflowOutputParameter] | dict[str, WorkflowOutputParameter | str] | dict[str, Any],
+    outputs: list[WorkflowOutputParameter] | dict[str, WorkflowOutputParameter | str],
 ) -> list[WorkflowOutputParameter]:
     if isinstance(outputs, list):
         result = []
