@@ -58,6 +58,16 @@ test_extra_field_output_rejected_format2_strict:
   operation: validate_format2_strict
   expect_error: true
 
+test_null_output_rejected_format2_lax:
+  fixture: synthetic-null-output.gxwf.yml
+  operation: validate_format2
+  expect_error: true
+
+test_null_output_rejected_format2_strict:
+  fixture: synthetic-null-output.gxwf.yml
+  operation: validate_format2_strict
+  expect_error: true
+
 test_missing_class_rejected_format2:
   fixture: synthetic-lint-no-class.gxwf.yml
   operation: validate_format2
